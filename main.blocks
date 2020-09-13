@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="9H!9eBH5J^u.`9vBD+Y1">Player</variable><variable type="KIND_SpriteKind" id="EY2q0768%{5+-G6ZsKW7">Projectile</variable><variable type="KIND_SpriteKind" id="j(wLx;55#o{(;Y.u:yUg">Food</variable><variable type="KIND_SpriteKind" id="^YaglKZ2C?N?5(WL/%J$">Enemy</variable><variable id="%JR7]4^I?TrHo-AyB72=">mySprite</variable><variable id="TBQmweA?)8H|1umSfsJ4">ducky</variable></variables><block type="pxt-on-start" id="bDPn~|B5b{/v{U,SUq+:" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor" id="WgSXi64`Ust^(u^{Y[BT"><field name="tilemap">tiles.createTilemap(hex`1000100002020202020202020102020202020202020202020202020201020202020202020202020203020202010202020202020202020202020202020102020202020202020202020202020201020202020202020202020202020202010202020202020202020202020202020102020202020202020202020202020201020202020202020202020202020202010202020202020201010101010101010102020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020204020202020202020202020202020202020202`, img`
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+2 2 2 2 2 2 2 2 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.dungeon.floorLight0,sprites.dungeon.darkGroundCenter,sprites.dungeon.buttonPink,sprites.dungeon.buttonTeal], TileScale.Sixteen)</field><next><block type="variables_set" id="~?#~(T$SRDdqyomgAakC"><field name="VAR" id="TBQmweA?)8H|1umSfsJ4">ducky</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Cn4GB1=Y?)P=C#)tA{bw"><value name="img"><shadow type="screen_image_picker" id="$a[d0xxVq@zhmcI6/-Md"><field name="img">img`
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. . . . b b 5 d 1 f 5 d 4 c . . 
+. . . . b 5 5 1 f f d d 4 4 4 b 
+. . . . b 5 5 d f b 4 4 4 4 b . 
+. . . b d 5 5 5 5 4 4 4 4 b . . 
+. . b d d 5 5 5 5 5 5 5 5 b . . 
+. b d d d d 5 5 5 5 5 5 5 5 b . 
+b d d d b b b 5 5 5 5 5 5 5 b . 
+c d d b 5 5 d c 5 5 5 5 5 5 b . 
+c b b d 5 d c d 5 5 5 5 5 5 b . 
+. b 5 5 b c d d 5 5 5 5 5 d b . 
+b b c c c d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="j?}`_%BwK%b.0b|.!9oH"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="zRzbQuPuhI@W+ZhLzakV"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="U2MYWez|u(^Z`=#Dzkk@"><field name="VAR" id="TBQmweA?)8H|1umSfsJ4">ducky</field></block></value><next><block type="camerafollow" id="!^:-FJ_lis93Zo0IoBmc"><value name="sprite"><block type="variables_get" id="x6G8_XpDq)4wdBz}MWvm"><field name="VAR" id="TBQmweA?)8H|1umSfsJ4">ducky</field></block></value></block></next></block></next></block></next></block></statement></block><block type="device_pause" id="p$8[_yTEnw%cHT!W8-V~" disabled="true" x="410" y="210"><value name="pause"><shadow type="timePicker" id="zx6[yw55%cgCzI,FEM=U" disabled="true"><field name="ms">1000</field></shadow></value></block><block type="spriteshittile" id="^]k3_Q}L)lmY``IB?Nx9" x="10" y="310"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="5}599;DSA).VJT.TTEol"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="|w(O?KYZyU-cd[N2`c8|"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="lUPB.LcHdDw?G:.E[@VQ"><field name="tile">sprites.dungeon.buttonPink</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="45z@oo4yDjMu4G|]:T6|"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="mapplaceontile" id="8k$Oj32{~#lCDd8%i:-f"><comment>goes back and forth and never stops if you put your sprite on the EXACT spot for button/portal. 
+FIX PROBLEM:
+Place player 1 col and 1 row over in a certain direction to avoid this</comment><value name="sprite"><block type="variables_get" id="ZgU38Yz)*S?fx-YxdCJO"><field name="VAR" id="TBQmweA?)8H|1umSfsJ4">ducky</field></block></value><value name="loc"><shadow type="mapgettile" id="DSDf;=ZK$e]2/YrZt/!="><value name="col"><shadow type="math_number" id="G[]!4K{cVxof}Tn_`mAa"><field name="NUM">12</field></shadow></value><value name="row"><shadow type="math_number" id="Y,dDBqJ-0@kvB%PS}V~A"><field name="NUM">13</field></shadow></value></shadow></value></block></statement></block><block type="spriteshittile" id="GH|zhLL]puVBlJ%tMJ9F" x="10" y="470"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="`mHk$AqU4KGV51w|`Sm6"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="9IDnYS;-:R|f~4rrGdcA"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="@#2xn8J@nJpej[sy%Nrf"><field name="tile">sprites.dungeon.buttonTeal</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="Rb37|C}~$JQr!k+*u{R7"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="mapplaceontile" id="`,UiR:+W$,XJ=lVlvFE5"><value name="sprite"><block type="variables_get" id="f1@@V9mq.q0gqK(U:(gD"><field name="VAR" id="TBQmweA?)8H|1umSfsJ4">ducky</field></block></value><value name="loc"><shadow type="mapgettile" id="xR!CC{HuaZv*jnqgUPF_"><value name="col"><shadow type="math_number" id="lhYGutK-Sy,+1FM9bgs;"><field name="NUM">5</field></shadow></value><value name="row"><shadow type="math_number" id="/Zj$(Q$[jT4g=K6-yrIo"><field name="NUM">3</field></shadow></value></shadow></value></block></statement></block></xml>
